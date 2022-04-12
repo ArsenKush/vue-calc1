@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <MyCalc />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import MyCalc from "./components/MyCalc.vue";
 
 export default {
-  name: "App",
+  name: "app",
   components: {
-    HelloWorld,
+    MyCalc,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #2c3e50;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+#app {
   margin-top: 60px;
 }
 </style>
